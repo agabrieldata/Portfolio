@@ -47,6 +47,9 @@ def score_model(model, X_t=X_train, X_v=X_valid, y_t=y_train, y_v=y_valid):
     preds = model.predict(X_v)
     return mean_absolute_error(y_v, preds)
 
+print('Model scores (lowest is best): ')
+print('\n')
+
 for i in range(0, len(models)):
     mae = score_model(models[i])
     plt.ylim(23250,24200)
@@ -54,6 +57,8 @@ for i in range(0, len(models)):
     plt.ylabel('Mae score')
     plt.title('Mae score comparision')
     print('Model %d MAE: %d' %(i+1, mae))
+print('\n')
+print('Model 6 has the lowest score, this model will be trained with the dataset: ')
 print('\n')
 
 #The lowest model was N3, followed by number 5. So We are going to use a combination of both that scores an even better MAE.
@@ -71,6 +76,8 @@ output = pd.DataFrame({'Id' : X_test.index, 'SalePrice': preds_test})
 output.to_csv('prediction.csv', index=False)
 
 #Printing output, some statistical information and plotting.
+print('Algorithm output and SalePrice statistical information: ')
+print('\n')
 print(output)
 print('\n')
 print(output['SalePrice'].describe())

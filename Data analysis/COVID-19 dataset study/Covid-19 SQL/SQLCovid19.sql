@@ -1,0 +1,1 @@
+SELECT * FROM Covid19TB

@@ -1,0 +1,72 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Covid19 Project", "Covid19 Project.dtproj", "{1F828645-18B4-47FB-AD22-4EF23A7BACB7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F828645-18B4-47FB-AD22-4EF23A7BACB7}.Development|Default.ActiveCfg = Development
+		{1F828645-18B4-47FB-AD22-4EF23A7BACB7}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6931D92D-EB10-4FCA-AAAE-7C6A102926FE}
+	EndGlobalSection
+EndGlobal
+=======
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Covid19 Project", "Covid19 Project.dtproj", "{1F828645-18B4-47FB-AD22-4EF23A7BACB7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F828645-18B4-47FB-AD22-4EF23A7BACB7}.Development|Default.ActiveCfg = Development
+		{1F828645-18B4-47FB-AD22-4EF23A7BACB7}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6931D92D-EB10-4FCA-AAAE-7C6A102926FE}
+	EndGlobalSection
+EndGlobal
+>>>>>>> 5283e5bff068fcedd001e66bd59faf05b8f0d577
+=======
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Covid19 Project", "Covid19 Project.dtproj", "{1F828645-18B4-47FB-AD22-4EF23A7BACB7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F828645-18B4-47FB-AD22-4EF23A7BACB7}.Development|Default.ActiveCfg = Development
+		{1F828645-18B4-47FB-AD22-4EF23A7BACB7}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6931D92D-EB10-4FCA-AAAE-7C6A102926FE}
+	EndGlobalSection
+EndGlobal
+>>>>>>> 5283e5bff068fcedd001e66bd59faf05b8f0d577

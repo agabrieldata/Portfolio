@@ -1,0 +1,3070 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/18/2020 4:09:02 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-JKMKUI1"
+  DTS:CreatorName="DESKTOP-JKMKUI1\geasa"
+  DTS:DTSID="{B3184619-EDA4-4A6D-A6D8-05E4D6BC80AB}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.121"
+  DTS:LocaleID="5129"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="14"
+  DTS:VersionGUID="{FC543AE3-BF25-4D3F-92C9-4BD9F2927E5F}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Covid19CSV]"
+      DTS:CreationName="FLATFILE"
+      DTS:Description="Covid19CSV"
+      DTS:DTSID="{8F228E2A-91FC-48CE-87E6-7DD649A95157}"
+      DTS:ObjectName="Covid19CSV">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="5129"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Data science\Proyectos\COVID-19\Covid-19 dataset\full_grouped.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date"
+              DTS:DTSID="{5BC0F01F-BF65-4EBD-ADC9-22C6ACEA153C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country Region"
+              DTS:DTSID="{83FCB4D0-87E5-4E90-BA9C-3ED19DC1FD36}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Confirmed"
+              DTS:DTSID="{977DB78D-D602-43A5-8ACA-0C20D9CA7A8A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Deaths"
+              DTS:DTSID="{D40E93F1-6F50-4872-A1A6-7E3802175FFD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Recovered"
+              DTS:DTSID="{1022EE1D-F0EE-4EB4-8BAF-C36F84C7248B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Active"
+              DTS:DTSID="{0C2AD361-F03C-4A01-9A89-243AA63DE8D0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="New cases"
+              DTS:DTSID="{4B85A3E6-6919-4755-AA77-1A38F08CAF0A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="New deaths"
+              DTS:DTSID="{AD9465F4-326F-4B46-B9A0-A0770B8DC740}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="New recovered"
+              DTS:DTSID="{ABF9018A-C293-4920-9271-5B8F327E45FA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="WHO Region"
+              DTS:DTSID="{27F43145-9005-4864-89F3-C5A2CF086FE3}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-JKMKUI1\SQLEXPESS.Covid19DB]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{04D50D4D-1130-4732-B858-5F260A4F873B}"
+      DTS:ObjectName="DESKTOP-JKMKUI1\SQLEXPESS.Covid19DB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-JKMKUI1\SQLEXPESS;Initial Catalog=Covid19DB;Integrated Security=True;Application Name=SSIS-Package-{04D50D4D-1130-4732-B858-5F260A4F873B}DESKTOP-JKMKUI1\SQLEXPESS.Covid19DB;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{4BB4A718-3F1A-4D20-A9FE-541664082109}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="5129"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Data science\Proyectos\COVID-19\Covid-19 dataset\full_grouped.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date"
+              DTS:DTSID="{5BAFBA10-5AC3-4BAF-BECC-3A6571E48A00}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country Region"
+              DTS:DTSID="{18579C37-B239-42F6-AC5F-B27EBA56BD78}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Confirmed"
+              DTS:DTSID="{93069089-D2E5-4BD3-9C41-16212EC8E406}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Deaths"
+              DTS:DTSID="{B7539675-CE85-427E-B716-416FE9969DFA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Recovered"
+              DTS:DTSID="{D4C687FD-8A81-4513-A729-26D3D520AB75}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Active"
+              DTS:DTSID="{702A4130-46BD-4250-8452-448D7C185530}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="New cases"
+              DTS:DTSID="{524987DB-9946-4579-95DC-83D0AC246795}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="New deaths"
+              DTS:DTSID="{6019BD2E-956B-4820-828C-4CD850A1F36B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="New recovered"
+              DTS:DTSID="{83693D31-FDD9-4398-9524-B6B34871C2DE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="WHO Region"
+              DTS:DTSID="{086BD925-0F26-4149-A3D1-D9D937024138}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\ETL"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{ED195284-5A8A-42BD-B520-E470E4108058}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="ETL"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\ETL\Cleaning and renaming"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Cleaning and renaming"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\ETL\Cleaning and renaming.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL\Cleaning and renaming.Inputs[Data Conversion Input].Columns[Date]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Date"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Date]" />
+                    <inputColumn
+                      refId="Package\ETL\Cleaning and renaming.Inputs[Data Conversion Input].Columns[Confirmed]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Confirmed"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Confirmed]" />
+                    <inputColumn
+                      refId="Package\ETL\Cleaning and renaming.Inputs[Data Conversion Input].Columns[Deaths]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Deaths"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Deaths]" />
+                    <inputColumn
+                      refId="Package\ETL\Cleaning and renaming.Inputs[Data Conversion Input].Columns[Recovered]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Recovered"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Recovered]" />
+                    <inputColumn
+                      refId="Package\ETL\Cleaning and renaming.Inputs[Data Conversion Input].Columns[Active]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Active"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Active]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\ETL\Cleaning and renaming.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Date]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Date]"
+                      name="Date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Date]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Confirmed]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Confirmed]"
+                      name="Confirmed"
+                      precision="18"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Confirmed]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Deaths]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Deaths]"
+                      name="Deaths"
+                      precision="18"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Deaths]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Recovered]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Recovered]"
+                      name="Recovered"
+                      precision="18"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Recovered]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Active]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Active]"
+                      name="Active"
+                      precision="18"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Active]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\ETL\Cleaning and renaming.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL\Covid19TB Destination"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
+              name="Covid19TB Destination"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The Destination database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."Covid19TB"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out. A value of 0 indicates infinite time-out. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether to use the SqlBulkCopy interface to improve the performance of bulk insert operations. Only certain providers support this interface."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL\Covid19TB Destination.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-JKMKUI1\SQLEXPESS.Covid19DB]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-JKMKUI1\SQLEXPESS.Covid19DB]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="ADO NET Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].Columns[Date]"
+                      cachedDataType="dbDate"
+                      cachedName="Date"
+                      externalMetadataColumnId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Date]"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Date]" />
+                    <inputColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].Columns[Confirmed]"
+                      cachedDataType="numeric"
+                      cachedName="Confirmed"
+                      cachedPrecision="18"
+                      externalMetadataColumnId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Confirmed]"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Confirmed]" />
+                    <inputColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].Columns[Deaths]"
+                      cachedDataType="numeric"
+                      cachedName="Deaths"
+                      cachedPrecision="18"
+                      externalMetadataColumnId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Death]"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Deaths]" />
+                    <inputColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].Columns[Recovered]"
+                      cachedDataType="numeric"
+                      cachedName="Recovered"
+                      cachedPrecision="18"
+                      externalMetadataColumnId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Recovered]"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Recovered]" />
+                    <inputColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].Columns[Active]"
+                      cachedDataType="numeric"
+                      cachedName="Active"
+                      cachedPrecision="18"
+                      externalMetadataColumnId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Active]"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Active]" />
+                    <inputColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].Columns[Country Region]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Country Region"
+                      externalMetadataColumnId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Country]"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Country Region]" />
+                    <inputColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].Columns[WHO Region]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="WHO Region"
+                      externalMetadataColumnId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[WHO]"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[WHO Region]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Date]"
+                      dataType="dbTimeStamp"
+                      name="Date" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Country]"
+                      dataType="wstr"
+                      length="50"
+                      name="Country" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[WHO]"
+                      dataType="wstr"
+                      length="50"
+                      name="WHO" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Confirmed]"
+                      dataType="i4"
+                      name="Confirmed" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Death]"
+                      dataType="i4"
+                      name="Death" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Recovered]"
+                      dataType="i4"
+                      name="Recovered" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Active]"
+                      dataType="i4"
+                      name="Active" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL\Covid19TB Destination.Outputs[ADO NET Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="ADO NET Destination Error Output"
+                  synchronousInputId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL\Covid19TB Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL\Covid19TB Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL\Covid19TB Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL\Covid19TB Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL\Loading CSV file"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="5129"
+              name="Loading CSV file"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL\Loading CSV file.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Date]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Date]"
+                      length="50"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Date]"
+                      name="Date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Country Region]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Country Region]"
+                      length="50"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Country Region]"
+                      name="Country Region"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Confirmed]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Confirmed]"
+                      length="50"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Confirmed]"
+                      name="Confirmed"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Deaths]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Deaths]"
+                      length="50"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Deaths]"
+                      name="Deaths"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Recovered]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Recovered]"
+                      length="50"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Recovered]"
+                      name="Recovered"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Active]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Active]"
+                      length="50"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Active]"
+                      name="Active"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[WHO Region]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[WHO Region]"
+                      length="50"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[WHO Region]"
+                      name="WHO Region"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Date" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Country Region]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Country Region" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Confirmed]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Confirmed" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Deaths]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Deaths" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Recovered]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Recovered" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Active]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Active" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[New cases]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="New cases" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[New deaths]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="New deaths" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[New recovered]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="New recovered" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[WHO Region]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="WHO Region" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\ETL.Paths[Data Conversion Output]"
+              endId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\ETL.Paths[Flat File Source Output]"
+              endId="Package\ETL\Cleaning and renaming.Inputs[Data Conversion Input]"
+              name="Flat File Source Output"
+              startId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="99,42"
+          Id="Package\ETL"
+          TopLeft="149,84" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\ETL">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="161,42"
+          Id="Package\ETL\Loading CSV file"
+          TopLeft="23.7222222222222,39.9444444444444" />
+        <NodeLayout
+          Size="192,42"
+          Id="Package\ETL\Covid19TB Destination"
+          TopLeft="357.444444444444,178.166666666667" />
+        <NodeLayout
+          Size="193,42"
+          Id="Package\ETL\Cleaning and renaming"
+          TopLeft="187.611111111111,100.055555555556" />
+        <EdgeLayout
+          Id="Package\ETL.Paths[Flat File Source Output]"
+          TopLeft="184.722222222222,60.9444444444444">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="99.3888888888889,39.1111111111111"
+              Start="0,0"
+              End="99.3888888888889,31.6111111111111">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="95.3888888888889,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="95.3888888888889,0"
+                    Point2="99.3888888888889,0"
+                    Point3="99.3888888888889,4" />
+                  <mssgle:LineSegment
+                    End="99.3888888888889,31.6111111111111" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL.Paths[Data Conversion Output]"
+          TopLeft="284.111111111111,142.055555555556">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="169.333333333333,36.111111111111"
+              Start="0,0"
+              End="169.333333333333,28.611111111111">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.0555555555555" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.0555555555555"
+                    Point2="0,18.0555555555555"
+                    Point3="4,18.0555555555555" />
+                  <mssgle:LineSegment
+                    End="165.333333333333,18.0555555555555" />
+                  <mssgle:CubicBezierSegment
+                    Point1="165.333333333333,18.0555555555555"
+                    Point2="169.333333333333,18.0555555555555"
+                    Point3="169.333333333333,22.0555555555555" />
+                  <mssgle:LineSegment
+                    End="169.333333333333,28.611111111111" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL\Covid19TB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+=======
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/18/2020 4:09:02 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-JKMKUI1"
+  DTS:CreatorName="DESKTOP-JKMKUI1\geasa"
+  DTS:DTSID="{B3184619-EDA4-4A6D-A6D8-05E4D6BC80AB}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.121"
+  DTS:LocaleID="5129"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="14"
+  DTS:VersionGUID="{FC543AE3-BF25-4D3F-92C9-4BD9F2927E5F}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Covid19CSV]"
+      DTS:CreationName="FLATFILE"
+      DTS:Description="Covid19CSV"
+      DTS:DTSID="{8F228E2A-91FC-48CE-87E6-7DD649A95157}"
+      DTS:ObjectName="Covid19CSV">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="5129"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Data science\Proyectos\COVID-19\Covid-19 dataset\full_grouped.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date"
+              DTS:DTSID="{5BC0F01F-BF65-4EBD-ADC9-22C6ACEA153C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country Region"
+              DTS:DTSID="{83FCB4D0-87E5-4E90-BA9C-3ED19DC1FD36}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Confirmed"
+              DTS:DTSID="{977DB78D-D602-43A5-8ACA-0C20D9CA7A8A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Deaths"
+              DTS:DTSID="{D40E93F1-6F50-4872-A1A6-7E3802175FFD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Recovered"
+              DTS:DTSID="{1022EE1D-F0EE-4EB4-8BAF-C36F84C7248B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Active"
+              DTS:DTSID="{0C2AD361-F03C-4A01-9A89-243AA63DE8D0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="New cases"
+              DTS:DTSID="{4B85A3E6-6919-4755-AA77-1A38F08CAF0A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="New deaths"
+              DTS:DTSID="{AD9465F4-326F-4B46-B9A0-A0770B8DC740}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="New recovered"
+              DTS:DTSID="{ABF9018A-C293-4920-9271-5B8F327E45FA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="WHO Region"
+              DTS:DTSID="{27F43145-9005-4864-89F3-C5A2CF086FE3}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-JKMKUI1\SQLEXPESS.Covid19DB]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{04D50D4D-1130-4732-B858-5F260A4F873B}"
+      DTS:ObjectName="DESKTOP-JKMKUI1\SQLEXPESS.Covid19DB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-JKMKUI1\SQLEXPESS;Initial Catalog=Covid19DB;Integrated Security=True;Application Name=SSIS-Package-{04D50D4D-1130-4732-B858-5F260A4F873B}DESKTOP-JKMKUI1\SQLEXPESS.Covid19DB;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{4BB4A718-3F1A-4D20-A9FE-541664082109}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="5129"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Data science\Proyectos\COVID-19\Covid-19 dataset\full_grouped.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date"
+              DTS:DTSID="{5BAFBA10-5AC3-4BAF-BECC-3A6571E48A00}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country Region"
+              DTS:DTSID="{18579C37-B239-42F6-AC5F-B27EBA56BD78}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Confirmed"
+              DTS:DTSID="{93069089-D2E5-4BD3-9C41-16212EC8E406}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Deaths"
+              DTS:DTSID="{B7539675-CE85-427E-B716-416FE9969DFA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Recovered"
+              DTS:DTSID="{D4C687FD-8A81-4513-A729-26D3D520AB75}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Active"
+              DTS:DTSID="{702A4130-46BD-4250-8452-448D7C185530}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="New cases"
+              DTS:DTSID="{524987DB-9946-4579-95DC-83D0AC246795}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="New deaths"
+              DTS:DTSID="{6019BD2E-956B-4820-828C-4CD850A1F36B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="New recovered"
+              DTS:DTSID="{83693D31-FDD9-4398-9524-B6B34871C2DE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="WHO Region"
+              DTS:DTSID="{086BD925-0F26-4149-A3D1-D9D937024138}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\ETL"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{ED195284-5A8A-42BD-B520-E470E4108058}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="ETL"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\ETL\Cleaning and renaming"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Cleaning and renaming"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\ETL\Cleaning and renaming.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL\Cleaning and renaming.Inputs[Data Conversion Input].Columns[Date]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Date"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Date]" />
+                    <inputColumn
+                      refId="Package\ETL\Cleaning and renaming.Inputs[Data Conversion Input].Columns[Confirmed]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Confirmed"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Confirmed]" />
+                    <inputColumn
+                      refId="Package\ETL\Cleaning and renaming.Inputs[Data Conversion Input].Columns[Deaths]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Deaths"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Deaths]" />
+                    <inputColumn
+                      refId="Package\ETL\Cleaning and renaming.Inputs[Data Conversion Input].Columns[Recovered]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Recovered"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Recovered]" />
+                    <inputColumn
+                      refId="Package\ETL\Cleaning and renaming.Inputs[Data Conversion Input].Columns[Active]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Active"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Active]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\ETL\Cleaning and renaming.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Date]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Date]"
+                      name="Date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Date]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Confirmed]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Confirmed]"
+                      name="Confirmed"
+                      precision="18"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Confirmed]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Deaths]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Deaths]"
+                      name="Deaths"
+                      precision="18"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Deaths]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Recovered]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Recovered]"
+                      name="Recovered"
+                      precision="18"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Recovered]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Active]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Active]"
+                      name="Active"
+                      precision="18"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Active]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\ETL\Cleaning and renaming.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL\Covid19TB Destination"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
+              name="Covid19TB Destination"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The Destination database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."Covid19TB"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out. A value of 0 indicates infinite time-out. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether to use the SqlBulkCopy interface to improve the performance of bulk insert operations. Only certain providers support this interface."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL\Covid19TB Destination.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-JKMKUI1\SQLEXPESS.Covid19DB]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-JKMKUI1\SQLEXPESS.Covid19DB]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="ADO NET Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].Columns[Date]"
+                      cachedDataType="dbDate"
+                      cachedName="Date"
+                      externalMetadataColumnId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Date]"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Date]" />
+                    <inputColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].Columns[Confirmed]"
+                      cachedDataType="numeric"
+                      cachedName="Confirmed"
+                      cachedPrecision="18"
+                      externalMetadataColumnId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Confirmed]"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Confirmed]" />
+                    <inputColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].Columns[Deaths]"
+                      cachedDataType="numeric"
+                      cachedName="Deaths"
+                      cachedPrecision="18"
+                      externalMetadataColumnId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Death]"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Deaths]" />
+                    <inputColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].Columns[Recovered]"
+                      cachedDataType="numeric"
+                      cachedName="Recovered"
+                      cachedPrecision="18"
+                      externalMetadataColumnId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Recovered]"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Recovered]" />
+                    <inputColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].Columns[Active]"
+                      cachedDataType="numeric"
+                      cachedName="Active"
+                      cachedPrecision="18"
+                      externalMetadataColumnId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Active]"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Active]" />
+                    <inputColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].Columns[Country Region]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Country Region"
+                      externalMetadataColumnId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Country]"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Country Region]" />
+                    <inputColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].Columns[WHO Region]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="WHO Region"
+                      externalMetadataColumnId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[WHO]"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[WHO Region]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Date]"
+                      dataType="dbTimeStamp"
+                      name="Date" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Country]"
+                      dataType="wstr"
+                      length="50"
+                      name="Country" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[WHO]"
+                      dataType="wstr"
+                      length="50"
+                      name="WHO" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Confirmed]"
+                      dataType="i4"
+                      name="Confirmed" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Death]"
+                      dataType="i4"
+                      name="Death" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Recovered]"
+                      dataType="i4"
+                      name="Recovered" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Active]"
+                      dataType="i4"
+                      name="Active" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL\Covid19TB Destination.Outputs[ADO NET Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="ADO NET Destination Error Output"
+                  synchronousInputId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL\Covid19TB Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL\Covid19TB Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL\Covid19TB Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL\Covid19TB Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL\Loading CSV file"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="5129"
+              name="Loading CSV file"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL\Loading CSV file.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Date]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Date]"
+                      length="50"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Date]"
+                      name="Date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Country Region]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Country Region]"
+                      length="50"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Country Region]"
+                      name="Country Region"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Confirmed]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Confirmed]"
+                      length="50"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Confirmed]"
+                      name="Confirmed"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Deaths]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Deaths]"
+                      length="50"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Deaths]"
+                      name="Deaths"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Recovered]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Recovered]"
+                      length="50"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Recovered]"
+                      name="Recovered"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Active]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Active]"
+                      length="50"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Active]"
+                      name="Active"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[WHO Region]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[WHO Region]"
+                      length="50"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[WHO Region]"
+                      name="WHO Region"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Date" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Country Region]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Country Region" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Confirmed]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Confirmed" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Deaths]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Deaths" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Recovered]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Recovered" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Active]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Active" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[New cases]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="New cases" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[New deaths]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="New deaths" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[New recovered]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="New recovered" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[WHO Region]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="WHO Region" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\ETL.Paths[Data Conversion Output]"
+              endId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\ETL.Paths[Flat File Source Output]"
+              endId="Package\ETL\Cleaning and renaming.Inputs[Data Conversion Input]"
+              name="Flat File Source Output"
+              startId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="99,42"
+          Id="Package\ETL"
+          TopLeft="149,84" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\ETL">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="161,42"
+          Id="Package\ETL\Loading CSV file"
+          TopLeft="23.7222222222222,39.9444444444444" />
+        <NodeLayout
+          Size="192,42"
+          Id="Package\ETL\Covid19TB Destination"
+          TopLeft="357.444444444444,178.166666666667" />
+        <NodeLayout
+          Size="193,42"
+          Id="Package\ETL\Cleaning and renaming"
+          TopLeft="187.611111111111,100.055555555556" />
+        <EdgeLayout
+          Id="Package\ETL.Paths[Flat File Source Output]"
+          TopLeft="184.722222222222,60.9444444444444">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="99.3888888888889,39.1111111111111"
+              Start="0,0"
+              End="99.3888888888889,31.6111111111111">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="95.3888888888889,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="95.3888888888889,0"
+                    Point2="99.3888888888889,0"
+                    Point3="99.3888888888889,4" />
+                  <mssgle:LineSegment
+                    End="99.3888888888889,31.6111111111111" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL.Paths[Data Conversion Output]"
+          TopLeft="284.111111111111,142.055555555556">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="169.333333333333,36.111111111111"
+              Start="0,0"
+              End="169.333333333333,28.611111111111">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.0555555555555" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.0555555555555"
+                    Point2="0,18.0555555555555"
+                    Point3="4,18.0555555555555" />
+                  <mssgle:LineSegment
+                    End="165.333333333333,18.0555555555555" />
+                  <mssgle:CubicBezierSegment
+                    Point1="165.333333333333,18.0555555555555"
+                    Point2="169.333333333333,18.0555555555555"
+                    Point3="169.333333333333,22.0555555555555" />
+                  <mssgle:LineSegment
+                    End="169.333333333333,28.611111111111" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL\Covid19TB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+>>>>>>> 5283e5bff068fcedd001e66bd59faf05b8f0d577
+=======
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/18/2020 4:09:02 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-JKMKUI1"
+  DTS:CreatorName="DESKTOP-JKMKUI1\geasa"
+  DTS:DTSID="{B3184619-EDA4-4A6D-A6D8-05E4D6BC80AB}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.121"
+  DTS:LocaleID="5129"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="14"
+  DTS:VersionGUID="{FC543AE3-BF25-4D3F-92C9-4BD9F2927E5F}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Covid19CSV]"
+      DTS:CreationName="FLATFILE"
+      DTS:Description="Covid19CSV"
+      DTS:DTSID="{8F228E2A-91FC-48CE-87E6-7DD649A95157}"
+      DTS:ObjectName="Covid19CSV">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="5129"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Data science\Proyectos\COVID-19\Covid-19 dataset\full_grouped.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date"
+              DTS:DTSID="{5BC0F01F-BF65-4EBD-ADC9-22C6ACEA153C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country Region"
+              DTS:DTSID="{83FCB4D0-87E5-4E90-BA9C-3ED19DC1FD36}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Confirmed"
+              DTS:DTSID="{977DB78D-D602-43A5-8ACA-0C20D9CA7A8A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Deaths"
+              DTS:DTSID="{D40E93F1-6F50-4872-A1A6-7E3802175FFD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Recovered"
+              DTS:DTSID="{1022EE1D-F0EE-4EB4-8BAF-C36F84C7248B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Active"
+              DTS:DTSID="{0C2AD361-F03C-4A01-9A89-243AA63DE8D0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="New cases"
+              DTS:DTSID="{4B85A3E6-6919-4755-AA77-1A38F08CAF0A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="New deaths"
+              DTS:DTSID="{AD9465F4-326F-4B46-B9A0-A0770B8DC740}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="New recovered"
+              DTS:DTSID="{ABF9018A-C293-4920-9271-5B8F327E45FA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="WHO Region"
+              DTS:DTSID="{27F43145-9005-4864-89F3-C5A2CF086FE3}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-JKMKUI1\SQLEXPESS.Covid19DB]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{04D50D4D-1130-4732-B858-5F260A4F873B}"
+      DTS:ObjectName="DESKTOP-JKMKUI1\SQLEXPESS.Covid19DB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-JKMKUI1\SQLEXPESS;Initial Catalog=Covid19DB;Integrated Security=True;Application Name=SSIS-Package-{04D50D4D-1130-4732-B858-5F260A4F873B}DESKTOP-JKMKUI1\SQLEXPESS.Covid19DB;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{4BB4A718-3F1A-4D20-A9FE-541664082109}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="5129"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Data science\Proyectos\COVID-19\Covid-19 dataset\full_grouped.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date"
+              DTS:DTSID="{5BAFBA10-5AC3-4BAF-BECC-3A6571E48A00}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country Region"
+              DTS:DTSID="{18579C37-B239-42F6-AC5F-B27EBA56BD78}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Confirmed"
+              DTS:DTSID="{93069089-D2E5-4BD3-9C41-16212EC8E406}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Deaths"
+              DTS:DTSID="{B7539675-CE85-427E-B716-416FE9969DFA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Recovered"
+              DTS:DTSID="{D4C687FD-8A81-4513-A729-26D3D520AB75}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Active"
+              DTS:DTSID="{702A4130-46BD-4250-8452-448D7C185530}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="New cases"
+              DTS:DTSID="{524987DB-9946-4579-95DC-83D0AC246795}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="New deaths"
+              DTS:DTSID="{6019BD2E-956B-4820-828C-4CD850A1F36B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="New recovered"
+              DTS:DTSID="{83693D31-FDD9-4398-9524-B6B34871C2DE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="WHO Region"
+              DTS:DTSID="{086BD925-0F26-4149-A3D1-D9D937024138}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\ETL"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{ED195284-5A8A-42BD-B520-E470E4108058}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="ETL"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\ETL\Cleaning and renaming"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Cleaning and renaming"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\ETL\Cleaning and renaming.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL\Cleaning and renaming.Inputs[Data Conversion Input].Columns[Date]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Date"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Date]" />
+                    <inputColumn
+                      refId="Package\ETL\Cleaning and renaming.Inputs[Data Conversion Input].Columns[Confirmed]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Confirmed"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Confirmed]" />
+                    <inputColumn
+                      refId="Package\ETL\Cleaning and renaming.Inputs[Data Conversion Input].Columns[Deaths]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Deaths"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Deaths]" />
+                    <inputColumn
+                      refId="Package\ETL\Cleaning and renaming.Inputs[Data Conversion Input].Columns[Recovered]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Recovered"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Recovered]" />
+                    <inputColumn
+                      refId="Package\ETL\Cleaning and renaming.Inputs[Data Conversion Input].Columns[Active]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Active"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Active]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\ETL\Cleaning and renaming.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Date]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Date]"
+                      name="Date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Date]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Confirmed]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Confirmed]"
+                      name="Confirmed"
+                      precision="18"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Confirmed]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Deaths]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Deaths]"
+                      name="Deaths"
+                      precision="18"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Deaths]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Recovered]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Recovered]"
+                      name="Recovered"
+                      precision="18"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Recovered]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Active]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Active]"
+                      name="Active"
+                      precision="18"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Active]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\ETL\Cleaning and renaming.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL\Covid19TB Destination"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
+              name="Covid19TB Destination"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The Destination database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."Covid19TB"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out. A value of 0 indicates infinite time-out. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether to use the SqlBulkCopy interface to improve the performance of bulk insert operations. Only certain providers support this interface."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL\Covid19TB Destination.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-JKMKUI1\SQLEXPESS.Covid19DB]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-JKMKUI1\SQLEXPESS.Covid19DB]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="ADO NET Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].Columns[Date]"
+                      cachedDataType="dbDate"
+                      cachedName="Date"
+                      externalMetadataColumnId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Date]"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Date]" />
+                    <inputColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].Columns[Confirmed]"
+                      cachedDataType="numeric"
+                      cachedName="Confirmed"
+                      cachedPrecision="18"
+                      externalMetadataColumnId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Confirmed]"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Confirmed]" />
+                    <inputColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].Columns[Deaths]"
+                      cachedDataType="numeric"
+                      cachedName="Deaths"
+                      cachedPrecision="18"
+                      externalMetadataColumnId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Death]"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Deaths]" />
+                    <inputColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].Columns[Recovered]"
+                      cachedDataType="numeric"
+                      cachedName="Recovered"
+                      cachedPrecision="18"
+                      externalMetadataColumnId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Recovered]"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Recovered]" />
+                    <inputColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].Columns[Active]"
+                      cachedDataType="numeric"
+                      cachedName="Active"
+                      cachedPrecision="18"
+                      externalMetadataColumnId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Active]"
+                      lineageId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output].Columns[Active]" />
+                    <inputColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].Columns[Country Region]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Country Region"
+                      externalMetadataColumnId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Country]"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Country Region]" />
+                    <inputColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].Columns[WHO Region]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="WHO Region"
+                      externalMetadataColumnId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[WHO]"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[WHO Region]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Date]"
+                      dataType="dbTimeStamp"
+                      name="Date" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Country]"
+                      dataType="wstr"
+                      length="50"
+                      name="Country" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[WHO]"
+                      dataType="wstr"
+                      length="50"
+                      name="WHO" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Confirmed]"
+                      dataType="i4"
+                      name="Confirmed" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Death]"
+                      dataType="i4"
+                      name="Death" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Recovered]"
+                      dataType="i4"
+                      name="Recovered" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input].ExternalColumns[Active]"
+                      dataType="i4"
+                      name="Active" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ETL\Covid19TB Destination.Outputs[ADO NET Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="ADO NET Destination Error Output"
+                  synchronousInputId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL\Covid19TB Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL\Covid19TB Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL\Covid19TB Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL\Covid19TB Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ETL\Loading CSV file"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="5129"
+              name="Loading CSV file"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ETL\Loading CSV file.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Date]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Date]"
+                      length="50"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Date]"
+                      name="Date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Country Region]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Country Region]"
+                      length="50"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Country Region]"
+                      name="Country Region"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Confirmed]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Confirmed]"
+                      length="50"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Confirmed]"
+                      name="Confirmed"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Deaths]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Deaths]"
+                      length="50"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Deaths]"
+                      name="Deaths"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Recovered]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Recovered]"
+                      length="50"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Recovered]"
+                      name="Recovered"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Active]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Active]"
+                      length="50"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[Active]"
+                      name="Active"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[WHO Region]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[WHO Region]"
+                      length="50"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].Columns[WHO Region]"
+                      name="WHO Region"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Date" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Country Region]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Country Region" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Confirmed]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Confirmed" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Deaths]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Deaths" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Recovered]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Recovered" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[Active]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Active" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[New cases]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="New cases" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[New deaths]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="New deaths" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[New recovered]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="New recovered" />
+                    <externalMetadataColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output].ExternalColumns[WHO Region]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="WHO Region" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ETL\Loading CSV file.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ETL\Loading CSV file.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\ETL.Paths[Data Conversion Output]"
+              endId="Package\ETL\Covid19TB Destination.Inputs[ADO NET Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\ETL\Cleaning and renaming.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\ETL.Paths[Flat File Source Output]"
+              endId="Package\ETL\Cleaning and renaming.Inputs[Data Conversion Input]"
+              name="Flat File Source Output"
+              startId="Package\ETL\Loading CSV file.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="99,42"
+          Id="Package\ETL"
+          TopLeft="149,84" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\ETL">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="161,42"
+          Id="Package\ETL\Loading CSV file"
+          TopLeft="23.7222222222222,39.9444444444444" />
+        <NodeLayout
+          Size="192,42"
+          Id="Package\ETL\Covid19TB Destination"
+          TopLeft="357.444444444444,178.166666666667" />
+        <NodeLayout
+          Size="193,42"
+          Id="Package\ETL\Cleaning and renaming"
+          TopLeft="187.611111111111,100.055555555556" />
+        <EdgeLayout
+          Id="Package\ETL.Paths[Flat File Source Output]"
+          TopLeft="184.722222222222,60.9444444444444">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="99.3888888888889,39.1111111111111"
+              Start="0,0"
+              End="99.3888888888889,31.6111111111111">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="95.3888888888889,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="95.3888888888889,0"
+                    Point2="99.3888888888889,0"
+                    Point3="99.3888888888889,4" />
+                  <mssgle:LineSegment
+                    End="99.3888888888889,31.6111111111111" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\ETL.Paths[Data Conversion Output]"
+          TopLeft="284.111111111111,142.055555555556">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="169.333333333333,36.111111111111"
+              Start="0,0"
+              End="169.333333333333,28.611111111111">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.0555555555555" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.0555555555555"
+                    Point2="0,18.0555555555555"
+                    Point3="4,18.0555555555555" />
+                  <mssgle:LineSegment
+                    End="165.333333333333,18.0555555555555" />
+                  <mssgle:CubicBezierSegment
+                    Point1="165.333333333333,18.0555555555555"
+                    Point2="169.333333333333,18.0555555555555"
+                    Point3="169.333333333333,22.0555555555555" />
+                  <mssgle:LineSegment
+                    End="169.333333333333,28.611111111111" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\ETL\Covid19TB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+>>>>>>> 5283e5bff068fcedd001e66bd59faf05b8f0d577
+</DTS:Executable>

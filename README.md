@@ -1,6 +1,6 @@
 # Projects
 
-In this Repository you will find all my projects and any course practice that I stumbled upon.
+In this Repository you will find all my projects on data science and data analysis.
 
 Please, feel free to download and review any of them.
 If there is any question you may have, please contact me for any further clarification. 

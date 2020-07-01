@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt # Used for plotting
 import seaborn as sns # Used for plot themes
 import matplotlib.ticker as mtick # Used to adjust plot ticks
 import numpy as np # Used to create arrays
+from sklearn.ensemble import RandomForestRegressor # Used to import the necessary model
 from sklearn.metrics import mean_absolute_error # Used for the creation of a score system in order to determine the best model
 sns.set_style('white')
 
@@ -28,7 +29,7 @@ X_test=X_test_full[features].copy()
 X_train, X_valid, y_train, y_valid = train_test_split(X, y, train_size = 0.8, test_size = 0.2, random_state = 0 )
 
 # Defining the models, testing for the lowest MAE score
-from sklearn.ensemble import RandomForestRegressor
+
 model_1 = RandomForestRegressor(n_estimators=50, random_state=0)
 model_2 = RandomForestRegressor(n_estimators=100, random_state=0)
 model_3 = RandomForestRegressor(n_estimators=100, criterion='mae', random_state=0)
@@ -50,6 +51,7 @@ def score_model(model, X_t=X_train, X_v=X_valid, y_t=y_train, y_v=y_valid):
 print('Model scores (lowest is best): ')
 print('\n')
 
+# Plotting each model in order to visually see the differences.
 for i in range(0, len(models)):
     mae = score_model(models[i])
     plt.ylim(23250,24200)
@@ -62,7 +64,6 @@ print('Model 6 has the lowest score, this model will be trained with the dataset
 print('\n')
 
 #The lowest model was N3, followed by number 5. So We are going to use a combination of both that scores an even better MAE.
-from sklearn.ensemble import RandomForestRegressor
 my_model = RandomForestRegressor(n_estimators=100, criterion='mae', max_depth=20, random_state=0)
 
 # Fitting the model to the training data

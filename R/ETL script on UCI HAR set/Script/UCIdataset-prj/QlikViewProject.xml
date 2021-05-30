@@ -1,0 +1,21 @@
+﻿<!-- Last project change: 2021-05-17 17:41:50 (2021-05-17 05:41:50) -->
+<PrjQlikViewProject>
+  <GLOBAL>
+    <AllPropertiesFileName>AllProperties.xml</AllPropertiesFileName>
+    <DocBinaryFileName>DocBinary.dat</DocBinaryFileName>
+    <DocInternalsFileName>DocInternals.xml</DocInternalsFileName>
+    <DocPropertiesFileName>DocProperties.xml</DocPropertiesFileName>
+    <LoadScriptFileName>LoadScript.txt</LoadScriptFileName>
+    <ModuleFileName>Module.txt</ModuleFileName>
+    <TopLayoutFileName>TopLayout.xml</TopLayoutFileName>
+  </GLOBAL>
+  <SHEETS>
+    <PrjSheetProperties>
+      <SheetId>Document\SH01</SheetId>
+      <IsActive>true</IsActive>
+      <ChildObjects></ChildObjects>
+    </PrjSheetProperties>
+  </SHEETS>
+  <REPORTS></REPORTS>
+  <ContainerMembers></ContainerMembers>
+</PrjQlikViewProject>

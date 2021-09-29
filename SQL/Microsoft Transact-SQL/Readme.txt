@@ -1,6 +1,8 @@
 In this folder you will find all the Labs projects needed to pass the Transact-SQL Microsoft course,
 and the main database used for these labs is the sample AdventureWorksLT database.
 
+Please refer to the Labs.sql file in order to view all the assignments from the Transact-SQL course. 
+
 Find attached both the main query files and a .bak of the database so that you can clone it in case you would like to test the 
 queries yourself.
 

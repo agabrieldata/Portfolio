@@ -1,30 +1,17 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[360]:
-
 
 import pandas as pd
 import numpy as np
 import os
 from sklearn.model_selection import train_test_split
 
-
-# In[361]:
-
-
 #While importing the data, it's important to note that the original data-set has 'unknown' values. In this case we will replace them with the null equivalent.
 data = pd.read_csv(os.getcwd() + '\\bank-additional-full.csv', na_values ='unknown', sep = ';')
 
-
-# In[362]:
-
-
 #Reviewing our data
 data
-
-
-# In[363]:
 
 
 #Checking what types of data each column has in order to normalize them.

@@ -2,6 +2,7 @@
 # Random Forest Algorithm for price prediction, using the 'Housing prices competition' dataset from kaggle.
 
 #Importing libraries
+print('Importing necessary libraries')
 import pandas as pd # Used to manipulate dataframes
 import os # Used to read and write on system files
 from sklearn.model_selection import train_test_split
@@ -15,11 +16,13 @@ sns.set_style('white')
 
 # Read the data
 # In order for the code to find the file, please be sure to have both train.csv and test.csv files in the same directory as this python script
+print('Loading the CSV files')
 cwd = os.getcwd()
 X_full = pd.read_csv( cwd + '\\train.csv', index_col='Id')
 X_test_full = pd.read_csv(cwd + '\\test.csv', index_col='Id')
 
 # Obtain target and predictors
+print('Obtaining target and predictors')
 y = X_full.SalePrice
 features = ['LotArea', 'YearBuilt', '1stFlrSF', '2ndFlrSF', 'FullBath', 'BedroomAbvGr', 'TotRmsAbvGrd']
 X=X_full[features].copy()
@@ -29,7 +32,7 @@ X_test=X_test_full[features].copy()
 X_train, X_valid, y_train, y_valid = train_test_split(X, y, train_size = 0.8, test_size = 0.2, random_state = 0 )
 
 # Defining the models, testing for the lowest MAE score
-
+print('Testing for lowest MAE score')
 model_1 = RandomForestRegressor(n_estimators=50, random_state=0)
 model_2 = RandomForestRegressor(n_estimators=100, random_state=0)
 model_3 = RandomForestRegressor(n_estimators=100, criterion='mae', random_state=0)
@@ -52,6 +55,7 @@ print('Model scores (lowest is best): ')
 print('\n')
 
 # Plotting each model in order to visually see the differences.
+print('Plotting models')
 for i in range(0, len(models)):
     mae = score_model(models[i])
     plt.ylim(23250,24200)

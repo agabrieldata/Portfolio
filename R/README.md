@@ -1,6 +1,6 @@
 # R projects and book resolutions
 
-In this Repository you will find all my projects on data science and data analysis with R, as well as the resolution for books on the subject.
+In this Repository you will find all my projects on data science and data analysis with R.
 
 Please, feel free to download and review any of them.
 If there is any question you may have, please contact me for any further clarification. 

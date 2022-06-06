@@ -37,7 +37,7 @@ setup_twitter_oauth(api_key,api_secret,access_token,access_token_secret)
 # 3.0 Extracting global warming tweets
 
 # extracting 4000 tweets related to global warming topic
-tweets <- searchTwitter("#pdpaola", n=4000, lang="en") #Check if filtering by country is possible
+tweets <- searchTwitter("#bitcoin", n=6000, lang="en") #Check if filtering by country is possible
 n.tweet <- length(tweets)
 
 # convert tweets to a data frame
